@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeroDetailActivity">
+
+    <TextView
+        android:id="@+id/textView_HeroDetailActivity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hero Name"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_HeroDetailActivity_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_HeroDetailActivity_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView_HeroDetailActivity_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_HeroDetailActivity_name"
+        app:srcCompat="@drawable/flatman" />
+
+    <TextView
+        android:id="@+id/textView_HeroDetailActivity_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hero Description"
+        app:layout_constraintBottom_toTopOf="@+id/textView_HeroDetailActivity_actualDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_HeroDetailActivity_image" />
+
+    <TextView
+        android:id="@+id/textView_HeroDetailActivity_superpower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Superpower"
+        app:layout_constraintBottom_toTopOf="@+id/textView_HeroDetailActivity_actualSuperpower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_HeroDetailActivity_actualDescription" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ranking"
+        app:layout_constraintBottom_toTopOf="@+id/textView_HeroDetailActivity_actualRanking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_HeroDetailActivity_actualSuperpower" />
+
+    <TextView
+        android:id="@+id/textView_HeroDetailActivity_actualDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actual Description"
+        app:layout_constraintBottom_toTopOf="@+id/textView_HeroDetailActivity_superpower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_HeroDetailActivity_description" />
+
+    <TextView
+        android:id="@+id/textView_HeroDetailActivity_actualSuperpower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actual Superpower"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_HeroDetailActivity_superpower" />
+
+    <TextView
+        android:id="@+id/textView_HeroDetailActivity_actualRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actual Ranking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
